@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heading</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0; 
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fff4e0;
+            line-height: 1.5;
+        }
+        .header {
+            background: linear-gradient(to right, #e45f07,#f1b100);
+            text-align: center;
+            color: #ffffff;
+            padding: 20px;
+        }
+        .header a{
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container{
+            max-width: 1350px;
+            margin:auto;
+        }
+        .hero {
+            padding: 40px 20px;
+        }
+        .text-title{
+            color: #ad7b7b;
+            font-size: 48px;
+            /*text-align: center;*/
+        }
+        .text-center{
+            text-align: center;
+        }
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: -8px 8px 0px  rgba(210, 105, 30, 0.575);
+            margin-bottom: 20px;
+        }
+        pre {
+            background-color: #ffffff;
+            border-left: 4px solid chocolate;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .label{
+            color: #ffffff;
+            padding: 2px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .h1-label{background-color: rgb(253, 150, 150);}
+        .h2-label{background-color: rgb(250, 216, 154);}
+        .h3-label{background-color: rgb(240, 240, 143);}
+        .h4-label{background-color: rgb(147, 230, 147);}
+        .h5-label{background-color: rgb(160, 160, 248);}
+        .h6-label{background-color: rgb(212, 138, 212);}
+        .note {
+            color: #be8200;
+            background-color: beige;
+        }
+        .note::before {
+            content:"📌";
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <h1>เรียนรู้เว็บเบื้องต้น</h1>
+        <a href="index.html">home</a>
+    </section>
+
+    <div class="container">
+        <div class="hero">
+            <h1  class="text-title">Workshop: HTML Heading </h1>
+            <p >ฝึกใช้แท็ก
+            &lt;h1> – &lt;h6> และการปรับขนาดหัวข้อด้วย CSS </p>
+        </div>
+        <div class="card">
+            <h2>1. ความหมายของ Headings (H1–H6)</h2>
+            <p>HTML มีหัวข้อทั้งหมด 6 ระดับ</p>
+            <ul>
+                <li><span class="label h1-label">H1</span> – หัวข้อใหญ่สุด ใช้สำหรับชื่อหน้าเว็บหรือหัวข้อหลัก</li>
+                <li><span class="label h2-label">H2</span> – หัวข้อรอง แบ่ง Section ของเนื้อหา</li>
+                <li><span class="label h3-label">H3</span> – หัวข้อย่อยภายใน H2</li>
+                <li><span class="label h4-label">H4</span> – ย่อยลงไปอีกระดับ</li>
+                <li><span class="label h5-label">H5</span> – ใช้น้อย แต่เน้นลำดับข้อมูล</li>
+                <li><span class="label h6-label">H6</span> – เล็กสุด ใช้กับหัวข้อระดับลึก</li>
+            </ul>
+            <p class="note" style="border-left: 4px solid chocolate;">💡 H1 ควรมีเพียง 1 อันในแต่ละหน้า เพื่อช่วย SEO และโครงสร้างเอกสาร</p>
+        </div>
+        <div class="card">
+            <h2>2. ตัวอย่างการใช ้H1–H6</h2>
+            <pre>
+            <code>
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;h2&gt;HTML Basics&lt;/h2&gt;
+    &lt;h3&gt;What is HTML?&lt;/h3&gt;
+    &lt;h4&gt;HTML Syntax&lt;/h4&gt;
+    &lt;h5&gt;Example Code&lt;/h5&gt;
+    &lt;h6&gt;Note: Case Sensitive&lt;/h6&gt;
+            </code>
+            </pre>
+                <h1>H1: Welcome to My Website</h1>
+                <h2>H2: HTML Basics</h2>
+                <h3>H3: What is HTML?</h3>
+                <h4>H4: HTML Syntax</h4>
+                <h5>H5: Example Code</h5>
+                <h6>H6: Note about heading size</h6>
+        </div>
+       
+    </div>
+
+
+</body>
+
+</html>
