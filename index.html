@@ -7,11 +7,13 @@
     <meta name="description" conteat="Learning about HTML">
     <title>Document</title>
     <style>
+        html{scroll-behavior: smooth;}
         body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             background-color: #fafad6;
             margin: 35px 50px;
-            scroll-behavior: smooth;
+            
+            line-height: 1.5;
         }
         
         h1 {
@@ -20,15 +22,27 @@
         }
         h2 {
             color:#4a358f;
-            text-align:left;
+            text-align:left; 
         }
         pre {
             background-color: rgb(233, 213, 188);
             padding:20px;
             border-left: 11px solid #4a358f;
             border-right: 11px solid #4a358f;
+            white-space: pre-wrap;
         }
-            
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(255, 0, 0);
+            background-color: #c3b9ff;
+            padding: 20;
+        }
+        .text-center{
+            text-align: center;
+        }
+        
     </style>
 </head>
     <h1 id ="top">HTML tutorial</h1>
@@ -87,8 +101,9 @@
     <a href="#top">Back to top</a>
 
     <h2 id="Heading">Heading</h2>
-    <p>workshop</p>
     <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags...</p>
+    <a herf="w03-01-heading.html">wokshop 1</a>
+    <a herf="w03-02-heading.html">| wokshop 2</a>
     <pre>
     - &lt;h1&gt;: Heading 1
     - &lt;h2&gt;: Heading 2
@@ -100,13 +115,11 @@
     <a href="#top">Back to top</a>
 
     <h2 id="Paragraph">Paragraph</h2>
-    <p>workshop</p>
     <p>HTML paragraphs are defined with the &lt;p&gt; tag...</p>
     <pre>- &lt;p&gt;: Paragraph</pre>
     <a href="#top">Back to top</a>
 
     <h2 id="TextFormatting">Text Formatting</h2>
-    <p>workshop</p>
     <p>HTML provides various elements to format text...</p>
     <pre>
         - &lt;h1&gt; to &lt;h6&gt;: Headings
@@ -133,7 +146,6 @@
     <a href="#top">Back to top</a>
 
     <h2 id="CreatingLinks">Creating Links</h2>
-    <p>workshop</p>
     <p>HTML links are defined with the &lt;a&gt; tag...</p>
     <pre>
 - &lt;a href="url" target=""&gt;Link text&lt;/a&gt;
@@ -207,7 +219,6 @@
     <a href="#top">Back to top</a>
 
     <h2 id="Images">Adding Images</h2>
-    <p>workshop</p>
     <p>HTML images are defined with the &lt;img&gt; tag...</p>
     <pre>
 - &lt;img src="url" alt="description"&gt;
@@ -252,8 +263,6 @@
     <a href="#top">Back to top</a>
 
     <h2 id="Tables">Creating Tables</h2>
-    <p>Workshop 1
-Workshop 2</p>
     <p>HTML tables are defined with the &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; tags...</p>
     <pre>
 - &lt;table&gt;: Table
@@ -263,8 +272,6 @@ Workshop 2</p>
     <a href="#top">Back to top</a>
 
     <h2 id="Forms">HTML Forms</h2>
-    <p>Workshop 1
-Workshop 2</p>
     <p>HTML forms are defined with the &lt;form&gt; tag...</p>
     <pre>
 <h3>หัวข้อเกี่ยวกับฟอร์ม</h3>
@@ -300,8 +307,6 @@ radio, checkbox, date, file
     <a href="#top">Back to top</a>
 
     <h2 id="Multimedia">Embedding Multimedia (Audio & Video)</h2>
-    <p>Workshop 1
-Workshop 2</p>
     <p>HTML multimedia elements are defined with the &lt;audio&gt; and &lt;video&gt; tags...</p>
     <pre>
 - &lt;audio controls&gt;: Audio player with controls
@@ -316,7 +321,7 @@ Workshop 2</p>
 </pre>
     <a href="#top">Back to top</a>
     
-    <h2 id="Semantic_Elements">Semantic Elements</h2>
+    <h2 id="Semantic">Semantic Elements</h2>
     <p>Semantic HTML elements clearly define the content of a web page...</p>
     <pre>- &lt;header&gt;: Defines a header for a document or section
 - &lt;nav&gt;: Defines navigation links
@@ -326,6 +331,11 @@ Workshop 2</p>
 - &lt;footer&gt;: Defines a footer for a document or section
 </pre>
     <a href="#top">Back to top</a>
+    <hr>
+    <div >
+        <a href="https://www.w3schools.com/html/default.asp">laern more about HTML</a>
+        <p>&copy; created by: 684259038:thapthep</p>
+    </div>
 
 <body>
     
