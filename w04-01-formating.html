@@ -8,15 +8,20 @@
 </head>
 <body>
     <header>
+
         <div class="brand">
+
             <div class="brand-icon">
                 <img src="images/brand-icon.png" alt="brand-icon">
             </div>
+
             <div class="brand-text">
                 <h2>เรียนรู้เว็บเบื้องต้น</h2>
                 <p>Basic Web Development</p>
             </div>
+
         </div>
+
         <nav>
             <ul>
                 <a href="index.html">Home</a>
@@ -27,65 +32,147 @@
         </nav>
     </header>
     <div class="hero">
-        <div class="hero-icon">&lt;/></div>
+        <div class="hero-icon"><b>&lt;/></b></div>
         <div class="hero-text">
             <h1>Formating</h1>
             <p>การจัดรูปแบบข้อความและองค์ประกอบต่าง ๆ ในหน้าเว็บ</p>
         </div>
     </div>
     <div class="container">
+
         <div class="card-grid">
+
             <!-- Card items will go here -->
-             <!-- card 1 -->
+            <!-- card 1 -->
             <div class="card">
+
                 <div class="card-header">
-                    <h3>1. ตัวอย่างผลลัพธ์</h3>
+                    <span class="card-header-icon">🖥</span> ตัวอย่างผลลัพธ์
                 </div>
-                <p>
-                    <p><span>B:</span> ข้อความตัวหนา</p>
-                    <p><strong><span>STRONG:</span> ข้อความสำคัญ</strong></p>
-                    <p><span>I:</span> ข้อความตัวเอียง</p>
-                    <p><em><span>EM:</span> ข้อความเน้นเสียง</em></p>
-                    <p><span>U:</span> ข้อความขีดเส้นใต้</p>
-                    <p><mark><span>MARK:</span> ข้อความที่ถูกเน้น</mark></p>
-                    <p><small><span>SMALL:</span> ข้อความขนาดเล็ก</small></p>
-                    <p><del><span>DEL:</span> ข้อความที่ถูกลบ</del></p>
-                    <p><span>SUP:</span> $x^2$</p>
-                    <p><span>SUB:</span> H~2~O</p>
-                </p>
+
+                <div class="card-body">
+                    <div class="format-row">
+                        <span class="label b-label">B:</span>
+                        <b>ข้อความตัวหนา</b>
+                    </div>
+
+                    <div class="format-row">
+                        <span class="label strong-label">STRONG:</span>
+                        <strong>ข้อความสำคัญ</strong>
+                    </div>
+                    <div class="format-row">
+                        <span class="label i-label">I:</span>
+                        <i>ข้อความตัวเอียง</i>
+                    </div>
+                    <div class="format-row">
+                        <span class="label em-label">EM:</span>
+                        <em>ข้อความเน้นเสียง</em>
+                    </div>
+                    <div class="format-row">
+                        <span class="label u-label">U:</span>
+                        <u>ข้อความขีดเส้นใต้</u>
+                    </div>
+                    <div class="format-row">
+                        <span class="label mark-label">MARK:</span>
+                        <mark>ข้อความที่ถูกเน้น</mark>
+                    </div>
+                    <div class="format-row">
+                        <span class="label small-label">SMALL:</span>
+                        <small>ข้อความขนาดเล็ก</small>
+                    </div>
+                    <div class="format-row">
+                        <span class="label del-label">DEL:</span>
+                        <del>ข้อความที่ถูกลบ</del>
+                    </div>
+                    <div class="format-row">
+                        <span class="label sup-label">SUP:</span>
+                        <span>x<sup>2</sup></span>
+                    </div>
+                    <div class="format-row">
+                        <span class="label sub-label">SUB:</span>
+                        <span>H<sub>2</sub>O</span>
+                    </div>
+                </div>
+
+
             </div>
             <!-- card 2 -->
             <div class="card">
+
                 <div class="card-header">
-                    <h3>2. ตัวอย่างโค้ด HTML</h3>
+                    <span class="card-header-icon">&lt;/&gt;</span>
+                    ตัวอย่างโค้ด HTML
                 </div>
-                <p>           
-                    <p>1  &lt;b>ข้อความตัวหนา&lt;/b></p>
-                    <p>2  &lt;strong>ข้อความสำคัญ&lt;/strong></p>
-                    <p>3  &lt;i>ข้อความตัวเอียง&lt;/i></p>
-                    <p>4  &lt;em>ข้อความเน้นเสียง&lt;/em></p>
-                    <p>5  &lt;u>ข้อความขีดเส้นใต้&lt;/u></p>
-                    <p>6  &lt;mark>ข้อความที่ถูกเน้น&lt;/mark></p>
-                    <p>7  &lt;small>ข้อความขนาดเล็ก&lt;/small>
-                    <p>8  &lt;del>ข้อความที่ถูกลบ&lt;/del></p>
-                    <p>9  x&lt;sup>2&lt;/sup></p>
-                    <p>10 H&lt;sub>2&lt;/sub>O</p>
-                </p> 
+
+                <div class="card-body">
+                    <div class="pre-box">
+<pre><span class="line-no">1</span><span class="html-tag">&lt;b&gt;</span><span>ข้อความตัวหนา</span><span class="html-tag">&lt;/b&gt;</span>
+<span class="line-no">2</span><span class="html-tag">&lt;strong&gt;</span><span>ข้อความสำคัญ</span><span class="html-tag">&lt;/strong&gt;</span>
+<span class="line-no">3</span><span class="html-tag">&lt;i&gt;</span><span>ข้อความตัวเอียง</span><span class="html-tag">&lt;/i&gt;</span>
+<span class="line-no">4</span><span class="html-tag">&lt;em&gt;</span><span>ข้อความเน้นเสียง</span><span class="html-tag">&lt;/em&gt;</span>
+<span class="line-no">5</span><span class="html-tag">&lt;u&gt;</span><span>ข้อความขีดเส้นใต้</span><span class="html-tag">&lt;/u&gt;</span>
+<span class="line-no">6</span><span class="html-tag">&lt;mark&gt;</span><span>ข้อความที่ถูกเน้น</span><span class="html-tag">&lt;/mark&gt;</span>
+<span class="line-no">7</span><span class="html-tag">&lt;small&gt;</span><span>ข้อความขนาดเล็ก</span><span class="html-tag">&lt;/small&gt;</span>
+<span class="line-no">8</span><span class="html-tag">&lt;del&gt;</span><span>ข้อความที่ถูกลบ</span><span class="html-tag">&lt;/del&gt;</span>
+<span class="line-no">9</span><span>x</span><span class="html-tag">&lt;sup&gt;</span><span>2</span><span class="html-tag">&lt;/sup&gt;</span>
+<span class="line-no">10</span><span>H</span><span class="html-tag">&lt;sub&gt;</span><span>2</span><span class="html-tag">&lt;/sub&gt;</span><span class="html-tag">O</span>
+</pre>
+                    </div>
+                </div>
+
+
+
             </div>
+
             <!-- card 3 -->
             <div class="card">
+
+
                 <div class="card-header">
-                    <h3>3. กิจกรรมฝึกปฏิบัติ</h3>
+                    <span>🎯</span>
+                    กิจกรรมฝึกปฏิบัติ
                 </div>
-                <div>
-                    <p>
-                        <p>ให้นักศึกษาสร้างหน้าเว็บ 1 หน้า</p>
-                        <p>ใช้แท็ก formatting อย่างน้อย 6 รูปแบบ</p>
-                        <p>ทดลองเปรียบเทียบ &lt;b> กับ &lt;strong> และ &lt;i> กับ &lt;em></p>
-                        <p>ปรับสี ขนาด และพื้นหลังบางข้อความด้วย CSS</p>
-                        <p>บันทึกไฟล์ชื่อ formatting.html</p>
-                    </p>
-                </div>
+
+
+                <ul class="">
+                    <li>
+                        <span>✓</span>
+                        <span>ให้นักศึกษาสร้างหน้าเว็บ 1 หน้า</span>
+                    </li>
+
+                    <li>
+                        <span>✓</span>
+                        <span>ใช้แท็ก formatting อย่างน้อย 6 รูปแบบ</span>
+                    </li>
+
+                    <li>
+                        <span >✓</span>
+                        <span>
+                            ทดลองเปรียบเทียบ
+                            <span>&lt;b&gt;</span> กับ
+                            <span>&lt;strong&gt;</span>
+                            และ
+                            <span>&lt;i&gt;</span> กับ
+                            <span>&lt;em&gt;</span>
+                        </span>
+                    </li>
+
+                    <li>
+                        <span>✓</span>
+                        <span>ปรับสี ขนาด และพื้นหลังบางข้อความด้วย CSS</span>
+                    </li>
+
+                    <li>
+                        <span>✓</span>
+                        <span>
+                            บันทึกไฟล์ชื่อ
+                            <span>formatting.html</span>
+                        </span>
+                    </li>
+                </ul>
+
+
+
             </div>
         </div>
 
