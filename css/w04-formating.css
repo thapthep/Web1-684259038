@@ -144,8 +144,17 @@ header {
     margin-right: 10px;
     width: 50px;
     height: 50px; 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 
-    border-radius: 100%;
+    border-radius: 50%;
+}
+.purple-bg{
+    background-color: #800080;
+}
+.purple-text{
+    color: #800080;
 }
 
 .card-body{
@@ -194,6 +203,101 @@ header {
     color: #ff9900;
 }
 .line-no{
+    display: inline-block;
+    width: 20px;
     color: #87f30c;
     font-weight: bold;
+}
+/* c.3 */
+
+.activity-list{list-style-type: none;}
+
+.activity-list li{
+    margin-bottom: 20px;
+}
+
+.check{
+    background-color: #09c2a380;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+
+    /* padding:10px; */
+    border-radius:50%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+}
+.check-blue{background-color: #00a2ff80;}
+.check-green{background-color: #09c2a380;}
+.check-yellow{background-color: #859402;}
+.check-red{background-color: #ff000080;}
+.check-purple{background-color: #80008080;}
+.check-strong{
+    color: #0004fd;
+    font-weight: bold;
+}
+.check-strong:hover{
+    color: #ff0000;
+    font-weight: bold;
+}
+.check-box{
+    background-color: #9488ff8e;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tip-box {
+    background-color: #f8ecec;
+    border-radius: 15px;
+    box-shadow: 0px 8px 10px  rgba(255, 94, 0, 0.322);
+    margin-bottom: 20px;
+    padding: 20px;
+    color: #6d2d08;
+    border: 1px solid #721700;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.tip-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.tip-box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.tip-box span {
+    font-weight: bold;
+    color: #0004ff;
+}
+.tip-box-icon {
+    font-size: 40px;
+    color: #6d2d08;
+    background-color: #ffb3007e;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
 }
