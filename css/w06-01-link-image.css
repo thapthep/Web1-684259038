@@ -119,7 +119,7 @@ body {
 
   border-radius: 20px;
   padding: 50px 40px;
-  background: linear-gradient(90deg, rgb(235, 223, 205), #fc9e47);
+  background: linear-gradient(90deg,#fc9e47, #fff7ec);
   box-shadow: 0 0px 10px rgba(129, 73, 0, 0.726);
 
   align-items: center;
@@ -131,7 +131,7 @@ body {
 }
 .hero-text p {
   font-size: 16px;
-  color: #64029286;
+  color: #33004b;
 }
 
 .hero-photo img {
@@ -152,6 +152,7 @@ body {
 /* =================linkexample=================== */
 .card {
   border: 1px solid #ff7b00;
+  background-color: #fff7ec;
   margin-top: 30px;
   border-radius: 20px;
   padding: 20px;
@@ -259,19 +260,164 @@ body {
 
 /* right content */
 .right-content {
-  border: 1px solid rgb(0, 255, 0);
+  /* border: 1px solid rgb(0, 255, 0);
   padding: 15px;
   margin: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px; */
+}
+/* card-submit */
+.card-submit {
+  border: 1px solid #ff7b00;
+  background-color: #fff7ec;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0px 10px rgba(129, 73, 0, 0.726);
+  
 }
 
-.submit-card {
+.card-body-submit {
+  line-height: 1.5 ;
 }
+.activity-list {
+  list-style-type: none;
+  line-height: 3;
+}
+.list-number {
+  color: #f6f8fc;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #640292;
+}
+/* =================================================================== */
+/* card-submit 2 */
+.card-body-grid-2{
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  padding: 0px 0px;
+}
+
+.card-body-grid-2 span{
+  border-radius: 200px;
+  padding: 10px 0px;
+  font-weight: bold;
+}
+
+.tag-blue{color: #0c0cf5;}
+.tag-light-blue{olor: #088686;}
+.tag-green{color: #006600;}
+.tag-orange{color: #634000;}
+.tag-purple{color: #4e0475;}
+.tag-red{color: #770303;}
+.tag-mint{color: #066e4a;}
+.tag-yellow{color: #5f5f01;}
+
+.box-blue{background-color: #0c0cf536;}
+.box-light-blue{background-color: #0cf5f53f;}
+.box-green{background-color: #0cf50c44;}
+.box-orange{background-color: #f5a30c42;}
+.box-purple{background-color: #a30cf54d;}
+.box-red{background-color: #f50c0c49;}
+.box-mint{background-color: #0cf5a341;}
+.box-yellow{background-color: #f5f50c3f;}
+
+/* ========================================================= */
+/* card-submit 3*/
+.list{
+  list-style-type: none;
+  line-height: 2.5;
+}
+
+.list-number-blue{background-color: #5d5dff;}
+.list-number-green{background-color: #63fd63;}
+.list-number-orange{background-color: #f3b84b;}
+.list-number-purple{background-color: #b143ec;}
+.list-number-red{background-color: #fd3f3f;}
+.list-number-mint{background-color: #3ef5b5;}
+
+/* card-bottom */
+
+.card-submit-bottom {
+  display: flex;
+  border: 3px solid #ffde96;
+  background-color: #fff5be;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0px 10px rgba(129, 73, 0, 0.726);
+  
+}
+.icon-bottom {
+  font-size: 40px;
+  color: #640292;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-bottom {padding-left: 10px;}
+
+.text-bottom h2{
+  color: #640292;
+  font-size: 20px;
+}
+
+
+
 
 /* =================================
 ||||      header-sectiom      |||||
 ====================================*/
 .tip-box {
-  border: 1px solid red;
-  padding: 15px;
-  margin: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 3px solid #ffde96;
+  background-color: #fff5be;
+  margin: 0px 20px 20px 20px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0px 10px rgba(129, 73, 0, 0.726);
+}
+.tip-box-icon {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #ec8c0e;  
+  max-width: 30px;
+  max-height: 30px;
+  border-radius: 50%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tip-box-body h2{
+  color: #640292;
+  font-size: 20px;
+}
+.tip-box-body p{
+  color: #220330;
+  font-size: 16px;
+}
+.tip-box-body span{
+  color: #ff0000;
+}
+.tip-box-right{
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
