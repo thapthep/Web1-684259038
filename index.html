@@ -4,124 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" conteat="Learning about HTML">
+    <meta name="description" content="Learning about HTML">
     <title>Document</title>
-    <style>
-        html{scroll-behavior: smooth;}
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            background-color: #fafad6;
-            margin: 35px 50px;
-            
-            line-height: 1.5;
-        }
-        
-        h1 {
-            color:#4a358f;
-            text-align: center;
-        }
-        h2 {
-            color:#4a358f;
-            text-align:left;
-        }
-        pre {
-            background-color: rgb(233, 213, 188);
-            padding:20px;
-            border-left: 11px solid #4a358f;
-            border-right: 11px solid #4a358f;
-            white-space: pre-wrap;
-        }
-        a{
-            text-decoration: none;
-        }
-        a:hover{
-            color: rgb(255, 0, 0);
-            padding: 20;
-        }
-        .text-center{
-            text-align: center;
-        }
-    
-    </style>
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
-    <h1 id ="top">HTML tutorial</h1>
-    <p>Welcome to the HTML tutorial. Click on the topics below to start learning:</p>
-    <!-- topic -->
+
+<body>
+    <div class="header">
+        <h1 id ="top">HTML tutorial</h1>
+        <p>Welcome to the HTML tutorial. Click on the topics below to start learning:</p>
+    </div>
+        <!-- topic -->
+    <div class="topics">
+        <h2>Topics</h2>
+        <ul class="card-heading-grid">
+            <li><a href="#Introduction">Introduction to HTML</a></li>
+            <li><a href="#Structure">HTML Document Structure</a></li>
+            <li><a href="#Heading">Heading</a></li>
+            <li><a href="#Paragraph">Paragraph</a></li>
+            <li><a href="#TextFormatting">Text Formatting</a></li>
+            <li><a href="#CreatingLinks">Creating Links</a></li>
+            <li><a href="#Lists">Lists (Ordered and Unordered)</a></li>
+            <li><a href="#Images">Adding Images</a></li>
+            <li><a href="#Tables">Creating Tables</a></li>
+            <li><a href="#Forms">HTML Forms</a></li>
+            <li><a href="#Multimedia">Embedding Multimedia (Audio & Video)</a></li>
+            <li><a href="#Semantic">Semantic HTML</a></li>
+        </ul>
+        
+    </div>
     
-    <h2>Topics</h2>
-    <ul>
-        <li><a href="#Introduction">Introduction to HTML</a></li>
-        <li><a href="#Structure">HTML Document Structure</a></li>
-        <li><a href="#Heading">Heading</a></li>
-        <li><a href="#Paragraph">Paragraph</a></li>
-        <li><a href="#TextFormatting">Text Formatting</a></li>
-        <li><a href="#CreatingLinks">Creating Links</a></li>
-        <li><a href="#Lists">Lists (Ordered and Unordered)</a></li>
-        <li><a href="#Images">Adding Images</a></li>
-        <li><a href="#Tables">Creating Tables</a></li>
-        <li><a href="#Forms">HTML Forms</a></li>
-        <li><a href="#Multimedia">Embedding Multimedia (Audio & Video)</a></li>
-        <li><a href="#Semantic">Semantic HTML</a></li>
-    </ul>
-    <hr>
     
     <!-- content -->
+    <div class="card">
+        <div class="card-header">
+            <h2 id="Introduction">Introduction to HTML</h2>
+        </div>
+        <div class="card-content">
+            <pre>- HTML stands for Hyper Text Markup Language
+            - HTML is the standard markup language for creating Web pages
+            - HTML describes the structure of a Web page
+            - HTML consists of a series of elements
+            - HTML elements tell the browser how to display the content
+            - HTML elements are represented by tags
+            - HTML tags label pieces of content such as "heading", "paragraph", "table", and so on
+            - Browsers do not display the HTML tags, but use them to render the content of the page
+            - HTML can embed programs written in a scripting language such as JavaScript,which affects the behavior and
+            content of web pages
+            - HTML is not a programming language, but a markup language</pre>
+        </div>
+        <a href="#top">Back to top</a>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h2 id="Structure">HTML Document Structure</h2>
+            <p>An HTML document has the following basic structure...
+            </p>
+        </div>
+        <div class="card-content">
+            <pre>คำอธิบาย:
+            &lt;!DOCTYPE html&gt;: ระบุว่าเป็นเอกสาร HTML5
+            &lt;html&gt;: เป็นรากของเอกสาร HTML ทั้งหมด
+            &lt;head&gt;: ส่วนที่ใช้เก็บข้อมูลเมตา เช่น &lt;title&gt; ชื่อหน้าเว็บ
+            &lt;body&gt;: ส่วนที่จะแสดงผลบนหน้าเว็บ
+            องค์ประกอบส าคัญของ HTML
+            แท็ก (Tags):
+            - แท็กเริ่มต้น (Opening Tag): เช่น &lt;h1&gt;
+            - แท็กปิด (Closing Tag): เช่น &lt;/h1&gt;
+            แอตทริบิวต์ (Attributes): คุณสมบัติของแท็ก
+            - ใช้เพื่อก าหนดคุณสมบัติเพิ่มเติม เช่น href, src, width, height
+            ตัวอย่าง: &lt;h1&gt;Hello, World!&lt;/h1&gt;
+            &lt;img src="image.jpg" alt="A description of the image"&gt;</pre>
+        </div>
+        <a href="#top">Back to top</a>
+    </div>
+    
+    <div class="card">
+        <div class="card-header">
+            <h2 id="Heading">Heading</h2>
+        </div>
+        <div class="card-content">
+            <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags...</p>
+            <a href="w03-01-heading.html"> wokshop 1</a>
+            <a href="w03-02-heading.html">| wokshop 2</a>
+            <pre>
+            - &lt;h1&gt;: Heading 1
+            - &lt;h2&gt;: Heading 2
+            - &lt;h3&gt;: Heading 3
+            - &lt;h4&gt;: Heading 4
+            - &lt;h5&gt;: Heading 5
+            - &lt;h6&gt;: Heading 6
+            </pre>
+        </div>
+        <a href="#top">Back to top</a>
+    </div>
+    
+    <div class="card">
+        <div class="card-header">
+            <h2 id="Paragraph">Paragraph</h2>
+            <p>HTML paragraphs are defined with the &lt;p&gt; tag...</p>
+        </div>
+        <div class="card-content">
+            <pre>- &lt;p&gt;: Paragraph</pre>
+        </div>
+        <a href="#top">Back to top</a>
+    </div>
 
-    <h2 id="Introduction">Introduction to HTML</h2>
-    <pre>- HTML stands for Hyper Text Markup Language
-    - HTML is the standard markup language for creating Web pages
-    - HTML describes the structure of a Web page
-    - HTML consists of a series of elements
-    - HTML elements tell the browser how to display the content
-    - HTML elements are represented by tags
-    - HTML tags label pieces of content such as "heading", "paragraph", "table", and so on
-    - Browsers do not display the HTML tags, but use them to render the content of the page
-    - HTML can embed programs written in a scripting language such as JavaScript,which affects the behavior and
-    content of web pages
-    - HTML is not a programming language, but a markup language</pre>
-    <a href="#top">Back to top</a>
-
-    <h2 id="Structure">HTML Document Structure</h2>
-    <p>An HTML document has the following basic structure...
-    </p>
-    <pre>คำอธิบาย:
-    &lt;!DOCTYPE html&gt;: ระบุว่าเป็นเอกสาร HTML5
-    &lt;html&gt;: เป็นรากของเอกสาร HTML ทั้งหมด
-    &lt;head&gt;: ส่วนที่ใช้เก็บข้อมูลเมตา เช่น &lt;title&gt; ชื่อหน้าเว็บ
-    &lt;body&gt;: ส่วนที่จะแสดงผลบนหน้าเว็บ
-    องค์ประกอบส าคัญของ HTML
-    แท็ก (Tags):
-    - แท็กเริ่มต้น (Opening Tag): เช่น &lt;h1&gt;
-    - แท็กปิด (Closing Tag): เช่น &lt;/h1&gt;
-    แอตทริบิวต์ (Attributes): คุณสมบัติของแท็ก
-    - ใช้เพื่อก าหนดคุณสมบัติเพิ่มเติม เช่น href, src, width, height
-    ตัวอย่าง: &lt;h1&gt;Hello, World!&lt;/h1&gt;
-    &lt;img src="image.jpg" alt="A description of the image"&gt;</pre>
-    <a href="#top">Back to top</a>
-
-    <h2 id="Heading">Heading</h2>
-    <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags...</p>
-    <a href="w03-01-heading.html"> wokshop 1</a>
-    <a href="w03-02-heading.html">| wokshop 2</a>
-    <pre>
-    - &lt;h1&gt;: Heading 1
-    - &lt;h2&gt;: Heading 2
-    - &lt;h3&gt;: Heading 3
-    - &lt;h4&gt;: Heading 4
-    - &lt;h5&gt;: Heading 5
-    - &lt;h6&gt;: Heading 6
-    </pre>
-    <a href="#top">Back to top</a>
-
-    <h2 id="Paragraph">Paragraph</h2>
-    <p>HTML paragraphs are defined with the &lt;p&gt; tag...</p>
-    <pre>- &lt;p&gt;: Paragraph</pre>
-    <a href="#top">Back to top</a>
-
-    <h2 id="TextFormatting">Text Formatting</h2>
-    <p>HTML provides various elements to format text...</p>
-    <a href="w04-01-formating.html"> wokshop 1</a>
-    <pre>
+    <div class="card">
+        <div class="card-header">
+            <h2 id="TextFormatting">Text Formatting</h2>
+            <p>HTML provides various elements to format text...</p>
+        </div>
+        <div class="card-content">
+            <a href="w04-01-formating.html"> wokshop 1</a>
+            <pre>
         - &lt;h1&gt; to &lt;h6&gt;: Headings
         - &lt;p&gt;: Paragraph
         - &lt;pre&gt;: Preformatted text
@@ -142,51 +139,63 @@
         - &lt;blockquote&gt;: Block quotation
         - &lt;q&gt;: Inline quotation
         - &lt;code&gt;: Code snippet
-</pre>
+    </pre>
+    </div>
     <a href="#top">Back to top</a>
-
-    <h2 id="CreatingLinks">Creating Links</h2>
-    <p>HTML links are defined with the &lt;a&gt; tag...</p>
-    <pre>
-- &lt;a href="url" target=""&gt;Link text&lt;/a&gt;
-- The href attribute specifies the URL of the page the link goes to
-- The target attribute specifies where to open the linked document
+    </div>
+    
+    <div class="card">
+        <div class="card-header">
+            <h2 id="CreatingLinks">Creating Links</h2>
+            <p>HTML links are defined with the &lt;a&gt; tag...</p>
+        </div>
+        <div class="card-content">
+            <pre>
+        - &lt;a href="url" target=""&gt;Link text&lt;/a&gt;
+        - The href attribute specifies the URL of the page the link goes to
+        - The target attribute specifies where to open the linked document
     - _self: Open the linked document in the same window/tab
     - _blank: Open the linked document in a new window/tab
     - _parent: Open the linked document in the parent frame
     - _top: Open the linked document in the full body of the window
     - The link text is the visible part of the link
-- Anchor links:
+    - Anchor links:
     - Use the href attribute with the # symbol to link to a specific part of the page
     - Use the id attribute to define the section to link to
     - Example: &lt;a href="#section"&gt;Go to Section&lt;/a&gt;
     - Example: &lt;h3 id="section"&gt;This is the Section&lt;/h3&gt;
-- Email links:
+    - Email links:
     - Use the mailto: prefix to create an email link
     - Example: &lt;a href="mailto:support@example.com">email us&lt;/a&gt;
-- Download links:
+    - Download links:
     - Use the download attribute to create a download link
     - Example: &lt;a href="file.txt" download&gt;Download Text File&lt;/a&gt;
     </pre>
+    </div>
     <a href="#top">Back to top</a>
-
-    <h2 id="Lists">Lists(Ordered and Unordered)</h2>
-    <p>workshop</p>
-    <p>HTML lists are defined with the &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; tags...</p>
-    <pre>
-    - &lt;ul&gt;: Unordered list
-    - &lt;ol&gt;: Ordered list
-    - &lt;li&gt;: List item
-    - Unordered list:
-        - Use the &lt;ul&gt; tag to create an unordered list
-        - Use the &lt;li&gt; tag to create each list item
-        - Example:
+    </div>
+    
+    <div class="card">
+        <div class="card-header">
+            <h2 id="Lists">Lists(Ordered and Unordered)</h2>
+            <p>HTML lists are defined with the &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; tags...</p>
+            <a href="w06-02-lists.html">workshop</a>
+        </div>
+        <div class="card-content">
+            <pre>
+            - &lt;ul&gt;: Unordered list
+            - &lt;ol&gt;: Ordered list
+        - &lt;li&gt;: List item
+        - Unordered list:
+            - Use the &lt;ul&gt; tag to create an unordered list
+            - Use the &lt;li&gt; tag to create each list item
+            - Example:
             &lt;ul&gt;
                 &lt;li&gt;Coffee&lt;/li&gt;
                 &lt;li&gt;Tea&lt;/li&gt;
                 &lt;li&gt;Milk&lt;/li&gt;
             &lt;/ul&gt;
-
+    
     - Ordered list:
         - Use the &lt;ol&gt; tag to create an ordered list
         - Use the &lt;li&gt; tag to create each list item
@@ -214,131 +223,163 @@
         - Example: &lt;ol style="list-style-type: lower-alpha;"&gt;
         - Example: &lt;ol style="list-style-type: upper-roman;"&gt;
         - Example: &lt;ol style="list-style-type: lower-roman;"&gt;
-
+    
     </pre>
-    <a href="#top">Back to top</a>
+    </div>
 
-    <h2 id="Images">Adding Images</h2>
-    <p>HTML images are defined with the &lt;img&gt; tag...</p>
-    <a href="w06-01-link-image.html"> wokshop 1</a>
-    <pre>
-- &lt;img src="url" alt="description"&gt;
-- The src attribute specifies the URL of the image
-- The alt attribute provides a description of the image
-- The width and height attributes provide the size of the image
-    - Example: &lt;img src="image.jpg" alt="description of image"&gt;
-    - Example: &lt;img src="image.jpg" alt="description of image" width="300" height="200"&gt;
-- Image alignment:
-    - Use the align attribute to specify the alignment of an image
-    - Example: &lt;img src="image.jpg" alt="description" align="left"&gt;
-    - Example: &lt;img src="image.jpg" alt="description" align="right"&gt;
-- Image border:
-    - Use the border attribute to add a border around an image
-    - Example: &lt;img src="image.jpg" alt="description" border="1"&gt;
-- Image link:
-    - Use the &lt;a&gt; tag to create a link around an image
-    - Example: &lt;a href="url"&gt;&lt;img src="image.jpg" alt="description"&gt;&lt;/a&gt;
-- Image gallery:
-    - Use the &lt;div&gt; tag to create an image gallery
-    - Use the &lt;img&gt; tag to display each image
-    - Example:
-        &lt;div class="gallery"&gt;
-            &lt;img src="image1.jpg" alt="Image 1"&gt;
-            &lt;img src="image2.jpg" alt="Image 2"&gt;
-            &lt;img src="image3.jpg" alt="Image 3"&gt;
-        &lt;/div&gt;
-- flex box:
-    - Use the display: flex; property to create a flex container
-    - Use the gap property to create space between flex items
-    - Example:
-        .gallery {
-            display: flex;
-            gap: 10px;
-        }
-        .gallery img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-        }
-</pre>
     <a href="#top">Back to top</a>
+    </div>
 
-    <h2 id="Tables">Creating Tables</h2>
-    <p>HTML tables are defined with the &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; tags...</p>
-    <pre>
-- &lt;table&gt;: Table
-- &lt;tr&gt;: Table row
-- &lt;th&gt;: Table header
-- &lt;td&gt;: Table data/cell</pre>
+    <div class="card">
+    <div class="card-header">
+        <h2 id="Images">Adding Images</h2>
+        <p>HTML images are defined with the &lt;img&gt; tag...</p>
+        <a href="w06-01-link-image.html"> wokshop 1</a>
+    </div>
+    <div class="card-content">
+        <pre>
+        - &lt;img src="url" alt="description"&gt;
+        - The src attribute specifies the URL of the image
+        - The alt attribute provides a description of the image
+        - The width and height attributes provide the size of the image
+        - Example: &lt;img src="image.jpg" alt="description of image"&gt;
+        - Example: &lt;img src="image.jpg" alt="description of image" width="300" height="200"&gt;
+        - Image alignment:
+        - Use the align attribute to specify the alignment of an image
+        - Example: &lt;img src="image.jpg" alt="description" align="left"&gt;
+        - Example: &lt;img src="image.jpg" alt="description" align="right"&gt;
+        - Image border:
+        - Use the border attribute to add a border around an image
+        - Example: &lt;img src="image.jpg" alt="description" border="1"&gt;
+        - Image link:
+        - Use the &lt;a&gt; tag to create a link around an image
+        - Example: &lt;a href="url"&gt;&lt;img src="image.jpg" alt="description"&gt;&lt;/a&gt;
+        - Image gallery:
+        - Use the &lt;div&gt; tag to create an image gallery
+        - Use the &lt;img&gt; tag to display each image
+        - Example:
+            &lt;div class="gallery"&gt;
+                &lt;img src="image1.jpg" alt="Image 1"&gt;
+                &lt;img src="image2.jpg" alt="Image 2"&gt;
+                &lt;img src="image3.jpg" alt="Image 3"&gt;
+            &lt;/div&gt;
+        - flex box:
+        - Use the display: flex; property to create a flex container
+        - Use the gap property to create space between flex items
+        - Example:
+            .gallery {
+                display: flex;
+                gap: 10px;
+            }
+            .gallery img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+            }
+        </pre>
+    </div>
     <a href="#top">Back to top</a>
+    </div>
 
-    <h2 id="Forms">HTML Forms</h2>
-    <p>HTML forms are defined with the &lt;form&gt; tag...</p>
+    <div class="card">
+    <div class="card-header">
+        <h2 id="Tables">Creating Tables</h2>
+        <p>HTML tables are defined with the &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; tags...</p>
+    </div>
+    <div class="card-content">
     <pre>
-<h3>หัวข้อเกี่ยวกับฟอร์ม</h3>
-1. โครงสร้างพื้นฐานของฟอร์ม
+    - &lt;table&gt;: Table
+    - &lt;tr&gt;: Table row
+    - &lt;th&gt;: Table header
+    - &lt;td&gt;: Table data/cell</pre>
+    </div>
+    <a href="#top">Back to top</a>
+    </div>
+
+<div class="card">
+    <div class="card-header">
+        <h2 id="Forms">HTML Forms</h2>
+        <p>HTML forms are defined with the &lt;form&gt; tag...</p>
+    </div>
+    <div class="card-content">
+    <pre>
+    <h3>หัวข้อเกี่ยวกับฟอร์ม</h3>
+    1. โครงสร้างพื้นฐานของฟอร์ม
     - &lt;form>: ใชเ้ป็นตวัครอบขอ้มูลในฟอรม์
     - action และ method (GET/POST): การก าหนดปลายทางและวธิสี ง่ ขอ้มลู
-2. ชนิดของอินพุต (Input Types)
+    2. ชนิดของอินพุต (Input Types)
     - &lt;input>: ชนดิ ตา่ ง ๆ เชน่ text, password, email, number,
-radio, checkbox, date, file
+    radio, checkbox, date, file
     - &lt;textarea>: ชอ่ งขอ้ความขนาดใหญ่
     - &lt;select> และ &lt;option>: เมนูแบบเลื่อนลง
     - &lt;datalist>: รายการตัวเลือกที่ก าหนดไว ้ล่วงหน้า
     - &lt;optgroup>: กลุ่มตัวเลือก
     - &lt;fieldset> และ &lt;legend>: กลุ่มข ้อมูลที่เกี่ยวข ้อง
-3. ปุ่ มในฟอร์ม
+    3. ปุ่ มในฟอร์ม
     - &lt;button>: ปุ่ มทั่วไป
     - &lt;input type="submit"> และ &lt;input type="reset">: ป่มุ สง่ และลา้งขอ้ มลู
     - &lt;input type="button">: ปุ่ มทั่วไป
     - &lt;input type="image">: ปุ่ มรูปภาพ
     - &lt;input type="file">: ปุ่ มอัพโหลดไฟล์
-4. การจัดการป้ายก ากับ (Labels)
+    4. การจัดการป้ายก ากับ (Labels)
     - &lt;label>: เพอื่ เชอื่ มกับ &lt;input> (ชว่ ยเพมิ่ การเขา้ถงึ)
     - for: ระบุ id ของอินพุตที่เกี่ยวข ้อง
-5. การตรวจสอบข ้อมูล (Validation)
+    5. การตรวจสอบข ้อมูล (Validation)
     - คณุ สมบัติเชน่ required, min, max, pattern
     - การใช ้JavaScript เพื่อท าการตรวจสอบ
-6. ฟอร์มแบบสมัยใหม่ (HTML5)
+    6. ฟอร์มแบบสมัยใหม่ (HTML5)
     - placeholder: ตัวอย่างขอ้ความในชอ่ งอนิ พุต
     - autofocus: ให ้ฟอร์มเริ่มต ้นโฟกัส
-7. การสง่ ฟอรม์ (Form Submission)
+    7. การสง่ ฟอรม์ (Form Submission)
     - การสง่ ขอ้มลู ไปยังเซริฟ์ เวอร์
     - การใช ้JavaScript (เชน่ onsubmit)</pre>
+    </div>
     <a href="#top">Back to top</a>
+</div>
 
-    <h2 id="Multimedia">Embedding Multimedia (Audio & Video)</h2>
-    <p>HTML multimedia elements are defined with the &lt;audio&gt; and &lt;video&gt; tags...</p>
-    <pre>
-- &lt;audio controls&gt;: Audio player with controls
-- &lt;video controls&gt;: Video player with controls
-- &lt;source src="file.mp3" type="audio/mpeg"&gt;
-- &lt;source src="file.mp4" type="video/mp4"&gt;
-- The controls attribute adds play, pause, and volume controls
-- The autoplay attribute makes the media start playing automatically
-- The loop attribute makes the media play in a loop
-- The muted attribute mutes the audio or video
-- The poster attribute specifies an image to show before the video plays
-</pre>
-    <a href="#top">Back to top</a>
-    
-    <h2 id="Semantic">Semantic Elements</h2>
-    <p>Semantic HTML elements clearly define the content of a web page...</p>
+<div class="card">
+        <div class="card-header">
+            <h2 id="Multimedia">Embedding Multimedia (Audio & Video)</h2>
+            <p>HTML multimedia elements are defined with the &lt;audio&gt; and &lt;video&gt; tags...</p>
+        </div>
+        <div class="card-content">
+            <pre>
+            - &lt;audio controls&gt;: Audio player with controls
+            - &lt;video controls&gt;: Video player with controls
+            - &lt;source src="file.mp3" type="audio/mpeg"&gt;
+            - &lt;source src="file.mp4" type="video/mp4"&gt;
+            - The controls attribute adds play, pause, and volume controls
+            - The autoplay attribute makes the media start playing automatically
+            - The loop attribute makes the media play in a loop
+            - The muted attribute mutes the audio or video
+            - The poster attribute specifies an image to show before the video plays
+            </pre>
+        </div>
+        <a href="#top">Back to top</a>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h2 id="Semantic">Semantic Elements</h2>
+        <p>Semantic HTML elements clearly define the content of a web page...</p>
+    </div>
+    <div class="card-content">
     <pre>- &lt;header&gt;: Defines a header for a document or section
-- &lt;nav&gt;: Defines navigation links
-- &lt;section&gt;: Defines a section in a document
-- &lt;article&gt;: Defines an article
-- &lt;aside&gt;: Defines content aside from the page content
-- &lt;footer&gt;: Defines a footer for a document or section
-</pre>
+    - &lt;nav&gt;: Defines navigation links
+    - &lt;section&gt;: Defines a section in a document
+    - &lt;article&gt;: Defines an article
+    - &lt;aside&gt;: Defines content aside from the page content
+    - &lt;footer&gt;: Defines a footer for a document or section
+    </pre>
+    </div>
     <a href="#top">Back to top</a>
+</div>
+
     <hr>
-    <div >
+    <div class="footer">
         <a href="https://www.w3schools.com/html/default.asp">laern more about HTML</a>
         <p>&copy; created by: 684259038:thapthep</p>
     </div>
-
-<body>
     
 </body>
 
