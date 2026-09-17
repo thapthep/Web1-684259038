@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 1.6;
+    color: var(--color-full);
+    background: linear-gradient(135deg, rgba(253, 180, 77, 0.336) 10%, rgba(230, 165, 165, 0.8) 100%);
+}
+
+.container {
+    max-width:1320px;
+    margin: 0 auto;
+}
+
+:root {
+    /* main-web-cl */
+    --primary-color: rgb(212, 129, 4);
+    --border-color:rgb(199, 115, 26);
+    /* text-cl */
+    --color-full: rgb(8, 7, 4);
+    
+    --mute-color-full: rgb(121, 120, 119);
+
+    --nav-color-full: rgb(87, 25, 0);
+
+    --ligth-color-full: rgb(255, 255, 255);
+
+    --secondary-color: red;
+
+    
+    /* backgroud-cl */
+    --tbn-bg-color: rgb(248, 155, 68);
+    --footer-bg-color: rgb(3, 2, 0);
+    --mute-bg-full: rgb(199, 191, 184);
+    /* shadow-cl */
+    --header-shadow: 0px 5px 10px rgb(235, 230, 209);
+    --card-shadow: 0px 4px 12px rgb(54, 51, 46);
+    /* ขอบ */
+
+}
+/* ============================================================
+                            HEADER
+===============================================================*/
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--header-shadow);
+    background-color: rgba(255, 255, 255, 0.582);
+    backdrop-filter: blur(100px);
+}
+
+.header-content {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.header-title{
+    color:var(--primary-color);
+    font-size: 60px;
+    font-size: clamp(2ram,5vw,3ram);
+}
+
+.header-subtitle {
+    font-size: 16;
+    color: var(--mute-color-full);
+}
+
+
+
+/* ============================================================
+                            Nav
+===============================================================*/
+nav {
+    padding-block: 2rem;
+    text-align: center;
+    
+}
+nav a {
+    text-decoration: none;
+    color: var(--nav-color-full);
+    padding: 0.5rem 1rem;
+    box-shadow: var(--card-shadow);
+    border-radius: 100px;
+    margin: 0.3rem;
+    transition: transform 0.3s;
+    display: inline-block;
+    background-color: var(--ligth-color-full);
+}
+.category-nav label{
+    color: var(--nav-color-full);
+    padding: 0.5rem 1rem;
+    box-shadow: var(--card-shadow);
+    border-radius: 100px;
+    margin: 0.3rem;
+    transition: transform 0.3s;
+    display: inline-block;
+    background-color: var(--ligth-color-full);
+}
+.category-nav label:hover {
+    transform: translateY(-5px);
+    background-color: var(--tbn-bg-color);
+    color: var(--ligth-color-full);
+}
+/* hide tbn */
+.filter-radio{
+    /* display: none; */
+    position: absolute;
+    width: 1px;
+
+    overflow: hidden;
+    clip-path: inset(50%);
+}
+/* chang color label */
+
+#filter-all:checked ~ .category-nav label[for="filter-all"],
+
+#filter-dog:checked ~ .category-nav label[for="filter-dog"],
+
+#filter-cat:checked ~ .category-nav label[for="filter-cat"],
+
+#filter-bird:checked ~ .category-nav label[for="filter-bird"],
+
+#filter-fish:checked ~ .category-nav label[for="filter-fish"],
+
+#filter-small-pet:checked ~ .category-nav label[for="filter-small-pet"]
+{
+    background-color: var(--tbn-bg-color);
+    color: var(--ligth-color-full);
+}
+/* hide tbn animal */
+.category-hide{
+    display: none;
+}
+/* show tbn anumal */
+#filter-all:checked ~ main .show-all,
+#filter-dog:checked ~ main .show-dog,
+#filter-cat:checked ~ main .show-cat,
+#filter-bird:checked ~ main .show-bird,
+#filter-fish:checked ~ main .show-fish,
+#filter-small-pet:checked ~ main .show-small-pet
+{
+    display: inline;
+}
+
+/* hide card img animal */
+#filter-dog:checked ~ main .pet-card,
+#filter-cat:checked ~ main .pet-card,
+#filter-bird:checked ~ main .pet-card,
+#filter-fish:checked ~ main .pet-card,
+#filter-small-pet:checked ~ main .pet-card
+{
+    display: none;
+}
+
+/* show card img anumal */
+#filter-dog:checked ~ main .show-dog,
+#filter-cat:checked ~ main .show-cat,
+#filter-bird:checked ~ main .show-bird,
+#filter-fish:checked ~ main .show-fish,
+#filter-small-pet:checked ~ main .show-small-pet{
+    display: block;
+}
+
+
+nav a.active {
+    background-color: var(--tbn-bg-color);
+    color: var(--ligth-color-full);
+}
+
+
+/* ============================================================
+                            main
+===============================================================*/
+.page-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pet-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.pet-card {
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+    border-radius: 1.0rem;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: var(--ligth-color-full);
+}
+
+.pet-card img {
+    height: 16.5rem;
+    width: 100%;
+    object-fit: cover;
+}
+.pet-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgb(255, 167, 3);
+    border: 0px;
+}
+
+
+.pet-content {
+    padding:1.25rem
+}
+.pet-content h2{
+    color: var(--primary-color);
+}
+
+.breed {
+    color: var(--mute-color-full);
+}
+
+/* ============================================================
+            info-section
+===============================================================*/
+
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    padding: 2rem 1rem;
+    background-color: var(--ligth-color-full);
+    color: var(--color-full);
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+    margin: 2rem auto;
+}
+
+.info-title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 100%;
+}
+
+.info-card {
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-card p {
+    margin-top: 0.5rem;
+    color:var(--color-full);
+}
+
+.info-blue {
+    background-color: rgb(0, 0, 255, 0.2);
+    color: rgb(0, 0, 255);
+}
+
+.info-purple {
+    background-color: rgb(128, 0, 128, 0.2);
+    color: rgb(128, 0, 128);
+}
+
+.info-green {
+    background-color: rgb(0, 128, 0, 0.2);
+    color: rgb(0, 128, 0);
+}
+
+.info-orange {
+    background-color: rgb(255, 165, 0, 0.2);
+    color: rgb(255, 165, 0);
+}
+
+
+/* ============================================================
+                        form-radio
+===============================================================*/
+
+.form-radio {
+    padding: 2rem 1rem;
+    background-color: var(--ligth-color-full);
+    color: var(--color-full);
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+    margin: 2rem auto;
+}
+.form-radio  h2 {
+    text-align: center;
+    color: var(--primary-color);
+}
+.form-radio  p {
+    text-align: center;
+    color: var(--mute-color-full);
+    margin-bottom: 0.67rem;
+}
+
+.form-radio fieldset{
+    padding: 1.5rem;
+    border: 3px dotted var(--border-color);
+    border-radius: 40px;
+
+}
+
+.form-radio legend{
+    padding: 0 0.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.radio-option {
+    display: flex;
+    justify-content: center;
+    gap: 0.67rem;
+
+    flex-wrap: wrap;
+}
+
+.radio-item label{
+    background-color: var(--mute-bg-full);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: var(--color-full);
+    cursor: pointer;
+}
+
+.radio-item input {
+    accent-color: var(--secondary-color);
+}
+.radio-item input:checked + label {
+    background-color: var(--secondary-color);
+    color: var(--ligth-color-full);
+}
+
+.reset-btn{
+    background-color: var(--primary-color);
+    color: var(--ligth-color-full);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+
+    border-radius: 0.5rem;
+    border:none;
+
+    display: block;
+    margin:1.5rem auto 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================================
+            footer
+===============================================================*/
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(--footer-bg-color);
+    color: var(--ligth-color-full);
+    margin-top: 2rem;
+}
