@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+
 }
 
 html {
@@ -11,24 +11,26 @@ html {
 }
 
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     line-height: 1.6;
     color: var(--color-full);
-    background: linear-gradient(135deg, rgba(253, 180, 77, 0.336) 10%, rgba(230, 165, 165, 0.8) 100%);
+    background: linear-gradient(135deg,
+            rgba(253, 180, 77, 0.336) 10%,
+            rgba(230, 165, 165, 0.8) 100%);
 }
 
 .container {
-    max-width:1320px;
+    max-width: 1320px;
     margin: 0 auto;
 }
 
 :root {
     /* main-web-cl */
     --primary-color: rgb(212, 129, 4);
-    --border-color:rgb(199, 115, 26);
+    --border-color: rgb(199, 115, 26);
     /* text-cl */
     --color-full: rgb(8, 7, 4);
-    
+
     --mute-color-full: rgb(121, 120, 119);
 
     --nav-color-full: rgb(87, 25, 0);
@@ -37,7 +39,10 @@ body {
 
     --secondary-color: red;
 
-    
+    --red-text-color: rgb(202, 87, 87);
+    --green-text-color: rgb(87, 202, 87);
+    --blue-text-color: rgb(87, 87, 202);
+
     /* backgroud-cl */
     --tbn-bg-color: rgb(248, 155, 68);
     --footer-bg-color: rgb(3, 2, 0);
@@ -48,6 +53,8 @@ body {
     /* ขอบ */
 
 }
+
+
 /* ============================================================
                             HEADER
 ===============================================================*/
@@ -65,10 +72,10 @@ body {
     padding: 20px 0px;
 }
 
-.header-title{
-    color:var(--primary-color);
+.header-title {
+    color: var(--primary-color);
     font-size: 60px;
-    font-size: clamp(2ram,5vw,3ram);
+    font-size: clamp(2ram, 5vw, 3ram);
 }
 
 .header-subtitle {
@@ -84,8 +91,11 @@ body {
 nav {
     padding-block: 2rem;
     text-align: center;
-    
+
 }
+
+
+
 nav a {
     text-decoration: none;
     color: var(--nav-color-full);
@@ -97,7 +107,8 @@ nav a {
     display: inline-block;
     background-color: var(--ligth-color-full);
 }
-.category-nav label{
+
+.category-nav label {
     color: var(--nav-color-full);
     padding: 0.5rem 1rem;
     box-shadow: var(--card-shadow);
@@ -107,13 +118,15 @@ nav a {
     display: inline-block;
     background-color: var(--ligth-color-full);
 }
+
 .category-nav label:hover {
     transform: translateY(-5px);
     background-color: var(--tbn-bg-color);
     color: var(--ligth-color-full);
 }
+
 /* hide tbn */
-.filter-radio{
+.filter-radio {
     /* display: none; */
     position: absolute;
     width: 1px;
@@ -121,54 +134,49 @@ nav a {
     overflow: hidden;
     clip-path: inset(50%);
 }
+
 /* chang color label */
 
-#filter-all:checked ~ .category-nav label[for="filter-all"],
-
-#filter-dog:checked ~ .category-nav label[for="filter-dog"],
-
-#filter-cat:checked ~ .category-nav label[for="filter-cat"],
-
-#filter-bird:checked ~ .category-nav label[for="filter-bird"],
-
-#filter-fish:checked ~ .category-nav label[for="filter-fish"],
-
-#filter-small-pet:checked ~ .category-nav label[for="filter-small-pet"]
-{
+#filter-all:checked~.category-nav label[for="filter-all"],
+#filter-dog:checked~.category-nav label[for="filter-dog"],
+#filter-cat:checked~.category-nav label[for="filter-cat"],
+#filter-bird:checked~.category-nav label[for="filter-bird"],
+#filter-fish:checked~.category-nav label[for="filter-fish"],
+#filter-small-pet:checked~.category-nav label[for="filter-small-pet"] {
     background-color: var(--tbn-bg-color);
     color: var(--ligth-color-full);
 }
+
 /* hide tbn animal */
-.category-hide{
+.category-hide {
     display: none;
 }
+
 /* show tbn anumal */
-#filter-all:checked ~ main .show-all,
-#filter-dog:checked ~ main .show-dog,
-#filter-cat:checked ~ main .show-cat,
-#filter-bird:checked ~ main .show-bird,
-#filter-fish:checked ~ main .show-fish,
-#filter-small-pet:checked ~ main .show-small-pet
-{
+#filter-all:checked~main .show-all,
+#filter-dog:checked~main .show-dog,
+#filter-cat:checked~main .show-cat,
+#filter-bird:checked~main .show-bird,
+#filter-fish:checked~main .show-fish,
+#filter-small-pet:checked~main .show-small-pet {
     display: inline;
 }
 
 /* hide card img animal */
-#filter-dog:checked ~ main .pet-card,
-#filter-cat:checked ~ main .pet-card,
-#filter-bird:checked ~ main .pet-card,
-#filter-fish:checked ~ main .pet-card,
-#filter-small-pet:checked ~ main .pet-card
-{
+#filter-dog:checked~main .pet-card,
+#filter-cat:checked~main .pet-card,
+#filter-bird:checked~main .pet-card,
+#filter-fish:checked~main .pet-card,
+#filter-small-pet:checked~main .pet-card {
     display: none;
 }
 
 /* show card img anumal */
-#filter-dog:checked ~ main .show-dog,
-#filter-cat:checked ~ main .show-cat,
-#filter-bird:checked ~ main .show-bird,
-#filter-fish:checked ~ main .show-fish,
-#filter-small-pet:checked ~ main .show-small-pet{
+#filter-dog:checked~main .show-dog,
+#filter-cat:checked~main .show-cat,
+#filter-bird:checked~main .show-bird,
+#filter-fish:checked~main .show-fish,
+#filter-small-pet:checked~main .show-small-pet {
     display: block;
 }
 
@@ -189,16 +197,19 @@ nav a.active {
 
 .pet-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: 1.5rem;
 }
 
 .pet-card {
     border: 1px solid var(--border-color);
     box-shadow: var(--card-shadow);
-    border-radius: 1.0rem;
+    border-radius: 1rem;
     overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
     background-color: var(--ligth-color-full);
 }
 
@@ -207,6 +218,7 @@ nav a.active {
     width: 100%;
     object-fit: cover;
 }
+
 .pet-card:hover {
     transform: translateY(-5px);
     box-shadow: 0px 8px 16px rgb(255, 167, 3);
@@ -215,15 +227,99 @@ nav a.active {
 
 
 .pet-content {
-    padding:1.25rem
+    padding: 1.25rem;
 }
-.pet-content h2{
+
+.pet-content h2 {
     color: var(--primary-color);
 }
 
 .breed {
     color: var(--mute-color-full);
 }
+
+/* ============================================================
+            SHOW AND HIDE BUTTON DETAIL
+===============================================================*/
+.pet-info {
+    list-style-type: none;
+    margin-block: 1rem;
+}
+
+.pet-info li {
+    margin-bottom: 0.67rem;
+}
+
+.info-lifespan {
+    color: var(--red-text-color)
+}
+
+
+.info-size {
+    color: var(--green-text-color)
+}
+
+
+.info-temperament {
+    color: var(--blue-text-color)
+}
+
+.pet-details summary {
+    list-style: none;
+}
+
+.pet-btn {
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--card-shadow);
+
+    text-align: center;
+    color: var(--ligth-color-full);
+
+    cursor: pointer;
+
+    transition: transform 0.5s;
+}
+
+.pet-btn:hover {
+    background-color: var(--tbn-bg-color);
+    transform: translateY(-6px);
+}
+
+.hide-detail {
+    display: none;
+}
+
+.pet-details[open] .hide-detail {
+    display: inline;
+}
+
+.pet-details[open] .show-detail {
+    display: none;
+}
+
+.pet-details-body {
+    margin-top: 1rem;
+    animation: appear 0.3s ease-out;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pet-details-body section+section {
+    margin-top: 1rem;
+}
+
 
 /* ============================================================
             info-section
@@ -247,9 +343,10 @@ nav a.active {
     margin-bottom: 1rem;
     font-size: 2rem;
 }
+
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
     gap: 1rem;
     width: 100%;
 }
@@ -257,13 +354,15 @@ nav a.active {
 .info-card {
     padding: 1.25rem;
     border-radius: 0.5rem;
-    
-    transition: transform 0.3s, box-shadow 0.3s;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
 }
 
 .info-card p {
     margin-top: 0.5rem;
-    color:var(--color-full);
+    color: var(--color-full);
 }
 
 .info-blue {
@@ -288,6 +387,81 @@ nav a.active {
 
 
 /* ============================================================
+                        table
+===============================================================*/
+.pet-table {
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+.pet-table td,
+.pet-table th {
+    padding: 1rem;
+    border: 1px solid rgb(190, 127, 85);
+
+    vertical-align: top;
+}
+
+.pet-table caption {
+    text-align: left;
+    font-weight: bold;
+    color: var(--primary-color);
+
+    caption-side: top;
+
+    overflow-wrap: break-word;
+}
+
+.pet-table thead th {
+
+    background-color: var(--primary-color);
+    color: var(--ligth-color-full);
+}
+
+.pet-table tbody th {
+
+    background-color: var(--mute-bg-full);
+    color: var(--color-fullfull);
+
+    text-align: left;
+
+    white-space: nowrap;
+}
+
+.pet-table thead th:nth-child(1) {
+    width: 200px;
+}
+
+.pet-table thead th:nth-child(2) {
+    width: 200px;
+}
+
+.pet-table thead th:nth-child(3) {
+    width: 200px;
+}
+
+.pet-table thead th:nth-child(4) {
+    width: 200px;
+}
+
+.pet-table thead th:nth-child(5) {
+    width: 200px;
+}
+
+
+.pet-table tbody tr:nth-child(even){background-color: beige;}
+
+.pet-table tbody tr:hover{
+    background-color: rgb(253, 182, 131);
+}
+
+.table-responsive{
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* ============================================================
                         form-radio
 ===============================================================*/
 
@@ -299,28 +473,31 @@ nav a.active {
     box-shadow: var(--card-shadow);
     margin: 2rem auto;
 }
-.form-radio  h2 {
+
+.form-radio h2 {
     text-align: center;
     color: var(--primary-color);
 }
-.form-radio  p {
+
+.form-radio p {
     text-align: center;
     color: var(--mute-color-full);
     margin-bottom: 0.67rem;
 }
 
-.form-radio fieldset{
+.form-radio fieldset {
     padding: 1.5rem;
     border: 3px dotted var(--border-color);
     border-radius: 40px;
 
 }
 
-.form-radio legend{
+.form-radio legend {
     padding: 0 0.5rem;
     color: var(--primary-color);
     font-weight: bold;
 }
+
 .radio-option {
     display: flex;
     justify-content: center;
@@ -329,7 +506,7 @@ nav a.active {
     flex-wrap: wrap;
 }
 
-.radio-item label{
+.radio-item label {
     background-color: var(--mute-bg-full);
     padding: 0.5rem 1rem;
     border-radius: 1rem;
@@ -340,34 +517,24 @@ nav a.active {
 .radio-item input {
     accent-color: var(--secondary-color);
 }
-.radio-item input:checked + label {
+
+.radio-item input:checked+label {
     background-color: var(--secondary-color);
     color: var(--ligth-color-full);
 }
 
-.reset-btn{
+.reset-btn {
     background-color: var(--primary-color);
     color: var(--ligth-color-full);
     padding: 0.5rem 1rem;
     cursor: pointer;
 
     border-radius: 0.5rem;
-    border:none;
+    border: none;
 
     display: block;
-    margin:1.5rem auto 0;
+    margin: 1.5rem auto 0;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* ============================================================
             footer
@@ -379,3 +546,40 @@ footer {
     color: var(--ligth-color-full);
     margin-top: 2rem;
 }
+
+
+/* ============================================================
+            reponsive
+===============================================================*/
+
+@media (max-width:992px) {
+    .pet-grid {
+        /* grid-template-columns: repeat(2,1FR); */
+    }
+
+    .category-nav label {
+        grid-template-columns: repeat(1, 1FR);
+    }
+
+}
+
+@media (max-width:768px) {
+    .pet-grid {
+        /* grid-template-columns: repeat(1,1FR); */
+    }
+
+    .info-grid {
+        /* grid-template-columns: repeat(2,1FR); */
+    }
+
+    .category-nav label {
+        display: block;
+        margin: 1rem 1rem 0 1rem;
+    }
+}
+
+@media (max-width:992) {}
+
+@media (max-width:992) {}
+
+@media (max-width:992) {}
